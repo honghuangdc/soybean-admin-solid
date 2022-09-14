@@ -1,8 +1,10 @@
 import { defineConfig, presetUno } from 'unocss';
+import { presetExtra } from 'unocss-preset-extra';
+import transformerVariantGroup from '@unocss/transformer-variant-group';
 
 export default defineConfig({
   exclude: ['node_modules', '.git', '.husky', '.vscode', 'dist', 'public', 'build', 'mock', './stats.html'],
-  presets: [presetUno({ dark: 'class' })],
+  presets: [presetUno({ dark: 'class' }), presetExtra()],
   shortcuts: {
     'wh-full': 'w-full h-full',
     'flex-center': 'flex justify-center items-center',
@@ -39,6 +41,7 @@ export default defineConfig({
     'ellipsis-text': 'nowrap-hidden overflow-ellipsis',
     'transition-base': 'transition-all duration-300 ease-in-out'
   },
+  transformers: [transformerVariantGroup()],
   theme: {
     colors: {
       primary: '#1890ff'

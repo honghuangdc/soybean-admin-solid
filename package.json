@@ -12,15 +12,17 @@
   },
   "dependencies": {
     "@hope-ui/solid": "^0.6.7",
-    "solid-js": "^1.5.1"
+    "solid-js": "^1.5.4"
   },
   "devDependencies": {
-    "@types/node": "^18.7.13",
-    "eslint": "^8.23.0",
-    "eslint-config-soybeanjs-solid": "^0.0.7",
-    "typescript": "4.7.4",
-    "unocss": "^0.45.13",
-    "vite": "^3.0.9",
+    "@types/node": "^18.7.18",
+    "@unocss/transformer-variant-group": "^0.45.21",
+    "eslint": "^8.23.1",
+    "eslint-config-soybeanjs-solid": "^0.1.0",
+    "typescript": "4.8.3",
+    "unocss": "^0.45.21",
+    "unocss-preset-extra": "^0.4.3",
+    "vite": "^3.1.0",
     "vite-plugin-html": "^3.2.0",
     "vite-plugin-solid": "^2.3.0"
   }
